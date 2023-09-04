@@ -11,8 +11,8 @@ cap = cv2.VideoCapture(0)
 #Width  = int(cap.get(cv2.CAP_PROP_FRAME_Height)) 
 #Height  = int(cap.get(cv2.CAP_PROP_FRAME_Width))
 
-#width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) 
-#height  = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) 
+width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) 
+height  = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) 
 
 #width  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) 
 #height  = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -69,8 +69,8 @@ def countFingers(image, hand_landmarks, handNo=0):
         #finger_tip_x = (landmarks[8].x)*height
         #finger_tip_y = (landmarks[8].y)*width
 
-        #finger_tip_x = (landmarks[8].x)*width
-        #finger_tip_y = (landmarks[8].y)*height
+        finger_tip_x = (landmarks[8].x)*width
+        finger_tip_y = (landmarks[8].y)*height
 
         #finger_tip_x = (landmarks[8].x)*Width
         #finger_tip_y = (landmarks[8].y)*Height
